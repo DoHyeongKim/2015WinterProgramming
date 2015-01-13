@@ -2,8 +2,11 @@
 #include <stdlib.h>
 
 typedef struct IntPair_s {
-  char c;
-  int num;
+    char c;
+    char c2;
+    int c3;
+    int c4;
+    double c5;
 } IntPair;
 
 int main(void) {

@@ -6,7 +6,7 @@ int calculateNum(int a, int b){
 	else{
 		int temp = a;
 
-		for(int i = 0; i<b-1;i++){
+		for(size_t i = 0; i<b-1;i++){
 			temp = (temp * a)%10;
 		}
 
@@ -18,8 +18,8 @@ int main(){
 	int numCase;
 	int *store = (int *)malloc(sizeof(int)*numCase);
 	scanf("%d", &numCase);
-	int count = numCase;
-	int i = 0;
+	size_t count = numCase;
+	size_t i = 0;
 
 	while(count-->0){
 		int a,b;
@@ -27,7 +27,7 @@ int main(){
 		store[i] = calculateNum(a,b);
 		i++;
 	}
-	for(int i = 0; i<numCase;i++){
+	for(size_t i = 0; i<numCase;i++){
 		printf("%d\n",store[i]);
 	}
 }

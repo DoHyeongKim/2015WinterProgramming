@@ -10,12 +10,21 @@ void print_uninitialized_local(void) {
     printf( "local_array[%zu] = %d\n", i, local_array[i] );
   }
 }
+/*
+  ,Local Variable was not initiallized with declaration.
+
+  Since that, when we print values of the array then garbage values will be printed.
+*/
 
 void print_uninitialized_global(void) {
   for( size_t i = 0; i < LENGTH; ++i ) {
     printf( "global_array[%zu] = %d\n", i, global_array[i] );
   }
 }
+/*
+   Global Variable was initiallized with zeros with declaration.
+*/
+
 
 int main(void) {
   print_uninitialized_local();
