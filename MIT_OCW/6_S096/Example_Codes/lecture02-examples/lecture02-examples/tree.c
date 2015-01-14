@@ -18,10 +18,10 @@ Node* create_node( int value ) {
 Node* insert_node( Node *tree, int value ) {
   if( tree != NULL ) {
     if( value <= tree->value ) {
-      tree->left = 
+      tree->left =
         insert_node( tree->left, value );
     } else {
-      tree->right = 
+      tree->right =
         insert_node( tree->right, value );
     }
     return tree;
@@ -81,9 +81,9 @@ void build_demo_tree(void) {
   tree = insert_node( tree, 8 );
   print_tree( tree );
   printf( "Tree has %zu items.\n", size_tree( tree ) );
-  //int treemult = 1;
-  //reduce_tree( tree, mult, &treemult );
- // printf( "Treemult = %d\n", treemult );
+  int treemult = 2;
+  reduce_tree( tree, mult, &treemult );
+  printf( "Treemult = %d\n", treemult );
   delete_tree( tree );
 }
 
