@@ -16,19 +16,17 @@ void changeValPtr(char *inputArr){
     }
     puts("");
 
-    *(inputArr+7) = (char)malloc(sizeof(char)*1);
-    *(inputArr+7) = 'F';
+    char temp = *(inputArr+7);
+    printf("%c\n",temp);
+    //*(inputArr+7) = 'F';
 }
 
 int main(){
-    //int arrTest[] = {111,222,333};
     char arrTest[] = "Hello, World";
     char *ptrTest = "Hello, World";
 
-    //for(size_t i = 0; i<3;i++)
-        //printf("%d\t",arrTest[i]);
-
     printf("%s\n",arrTest);
+    printf("%s\n",ptrTest);
 
     puts("");
 
@@ -39,6 +37,7 @@ int main(){
       //  printf("%d\t",arrTest[i]);
 
     printf("%s\n", arrTest);
+    printf("%s\n",ptrTest);
 
     return 0;
 }

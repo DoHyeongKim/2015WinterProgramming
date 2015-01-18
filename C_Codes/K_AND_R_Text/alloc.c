@@ -13,6 +13,12 @@ char *alloc(int n){
     }
 }
 
+int allocTest(int *intPtr){
+    int **temp;
+
+    temp = &(intPtr));
+}
+
 void afree(char *p){
     if(p>=allocbuf && p < allocbuf + ALLOCSIZE)
         allocp = p;

@@ -27,7 +27,7 @@ int main()
 		printf("Input 3 integers : ");
 		scanf("%d", &in[0]);
 		scanf("%d", &in[1]);
-		scanf("%d", &in[2]);
+		scanf("%d", &in[2]);\
 
 		strike = ball = 0;
 		for(int i=0; i<3; i++)

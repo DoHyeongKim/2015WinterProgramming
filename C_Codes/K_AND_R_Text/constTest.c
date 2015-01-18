@@ -5,16 +5,16 @@
 void commonFuncPtr(char ** inputStr){
     *(inputStr) = (char *) &("Hello, Func");
 }
-*/
+
 void commonFuncPtr(char * inputStr){
     printf("%d\n",inputStr);
 }
-
+*/
 void commonFuncArr(char inputStr[]){
     inputStr[7] = 'F';
     inputStr[8] = 'u';
-    inputStr[9] = 'n';
-    inputStr[10] = 'c';
+    *(inputStr+9) = 'n';
+    *(inputStr+10) = 'c';
     inputStr[11] = '\0';
     printf("In funcArr : %s\n",inputStr);
 }
@@ -51,13 +51,13 @@ int main(void){
     puts("");
 
     //commonFuncPtr(&testPtr);
-commonFuncPtr(testPtr);
+    //commonFuncPtr(testPtr);
     commonFuncArr(testArr);
     //constFuncArr(testArr2);
 
     printf("After commonFunc with Pointer : %s\n", testPtr); /* Print return value of the function without CONST Declaration */
     printf("After commonFunc with Array : %s\n", testArr); /* Print return value of the function without CONST Declaration */
-    printf("After commonFunc with Array : %s\n", testArr2); /* Print return value of the function without CONST Declaration */
+    //printf("After commonFunc with Array : %s\n", testArr2); /* Print return value of the function without CONST Declaration */
 
 //    constFunc(testStr);
 
