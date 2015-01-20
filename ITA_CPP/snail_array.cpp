@@ -16,7 +16,7 @@ int main()
 	int i=0, j=-1;    //첫시작위치
 	int new_dist, dist;
 
-	cout<<"달팽이배열의 크기를 입력하세요 : ";
+	cout<<"Input size of snail array : ";
 	cin>>length;
 
 	max = length*length;
@@ -41,13 +41,13 @@ int main()
 			break;
 		}
 		arr[ length*i + j ] = ++k;   //arr[ length*i + j ]는 현재의 위치가 된다.
-								   //한걸음 옮겨간 위치에 이동걸음 k를 입력한다. 
-       
+								   //한걸음 옮겨간 위치에 이동걸음 k를 입력한다.
+
 		dist--;        //dist는 현재방향에서 벽과의 거리를 나타내는 변수
 					   //한걸음 이동하였으므로 벽과리 거리가 1줄었다.
 
 		if(dist==0)       //만약 벽과의 거리가 0이라면 방향을 고친다.
-		{         
+		{
 			if(direction==RIGHT || direction==LEFT)
 			{
 				new_dist--;     //new_dist는 방향을 바꾼후의 벽과의 거리를 나타내는 변수

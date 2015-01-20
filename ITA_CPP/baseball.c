@@ -40,7 +40,7 @@ int main(){
         int strike = 0;
         int ball = 0;
 
-        printf("Your input Numbers are : (Ex. 3 2 4)");
+        printf("Your input Numbers are (ex 3 2 4) : ");
 
         for(int i = 0; i<3;i++){
             scanf("%d", &input[i]);
