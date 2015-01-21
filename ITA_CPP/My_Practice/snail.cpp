@@ -67,4 +67,5 @@ int main(){
             }
             cout << endl;
         }
+        delete(root);
 }

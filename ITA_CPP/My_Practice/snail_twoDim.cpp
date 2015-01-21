@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+#include <cmath> // ceil -> calculate rotation
 using namespace std;
 
 #define RIGHT 0
