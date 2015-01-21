@@ -1,6 +1,8 @@
-#include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
+#include <stdio.h>
+//#include<conio.h>
+#include <stdlib.h>
+#include <iostream>
+#include <cstring>
 #define WIDTH 15
 #define HEIGHT 24
 #define WALL '%'
@@ -15,7 +17,7 @@ void sleep(int t)
 		for( int j=0;j<t;j++)
 			;
 }
-void main()
+int main()
 {
 	int hp = 10;
 	int score = 0;
@@ -24,7 +26,7 @@ void main()
 	int c;
 	char map[HEIGHT][WIDTH] = {0};//{ {1}, {1,1}, {1,1,1}, {1,1,1,1} };
 
-	
+
 	while(hp>0)
 	{
 //		system("cls");
@@ -88,4 +90,5 @@ void main()
 		if(c==13)
 			break;
 	}
+	return 0;
 }
