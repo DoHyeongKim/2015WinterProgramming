@@ -22,10 +22,8 @@ void arrRand(int *input, size_t arrSize){
 }
 
 int main(){
-    // 야구게임에서 기본적으로 생성할 3개의 숫자를 생성하고, 저장한다.
     while(1){
-
-        int save[3]; // 3개의 숫자 생성 및 저장
+        int save[3];
 
         int choice;
         printf("If you want to make solution number of yourself, insert 1. If you want to make it randomly, insert 2 : ");
