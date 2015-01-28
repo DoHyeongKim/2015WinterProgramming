@@ -6,7 +6,6 @@ class Array {
   double *_elem;
   Array( const Array& );
   Array& operator=( const Array& );
-public:
   Array( size_t theSize );
   ~Array();
 
